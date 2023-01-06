@@ -1,0 +1,9 @@
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\bin\Debug\MandelbrotSet.exe
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\bin\Debug\MandelbrotSet.pdb
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\bin\Debug\DotCSharp.xml
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\obj\x86\Debug\MandelbrotSet.csprojResolveAssemblyReference.cache
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\obj\x86\Debug\MandelbrotSet.Form1.resources
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\obj\x86\Debug\MandelbrotSet.Properties.Resources.resources
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\obj\x86\Debug\MandelbrotSet.csproj.GenerateResource.Cache
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\obj\x86\Debug\MandelbrotSet.exe
+c:\users\hdmi\documents\visual studio 2010\Projects\MandelbrotSet\MandelbrotSet\obj\x86\Debug\MandelbrotSet.pdb

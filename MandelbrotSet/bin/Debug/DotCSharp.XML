@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DotCSharp</name>
+    </assembly>
+    <members>
+        <member name="T:System.Matlab.Polynomial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.Collections.Generic.HashTree`2.Add(`0,`1)">
+            <summary>
+            Adds the specified key and value to hashTree.
+            </summary>
+            <param name="key">The key of the element to Add.</param>
+            <param name="value">The value of the element  to Add. The value can be null for refrence types.</param>
+        </member>
+        <member name="M:System.Collections.Generic.HashTree`2.TryAdd(`0,`1)">
+            <summary>
+            Adds the specified keyValuePair to the hashTree.
+            </summary>
+            <param name="pair">The element to Add.</param>
+        </member>
+        <member name="T:System.Matlab.Maths">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:System.Matlab.Maths.Exp(System.Matlab.Complex)">
+            <summary>
+            Calculating the Niberian Exponent for a Complex Number
+            </summary>
+            <param name="z">A complex number specifying a power</param>
+            <returns>Exp(z)</returns>
+        </member>
+        <member name="M:System.Matlab.Maths.ExpForm(System.Double,System.Double)">
+            <summary>
+            To set the complex number using exponential form
+            </summary>
+            <param name="r">r is the modulus of  a complex number</param>
+            <param name="o">o is the argument of a complex number</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Sign(System.Matlab.Complex)">
+            <summary>
+            Returns a value indicating the sign of a complex number
+            </summary>
+            <param name="z">A complex number specifying an angle</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Log(System.Matlab.Complex)">
+             <summary>
+            Returns the value of the logarithm of a complex number
+             </summary>
+             <param name="z">A complex  number  whose logarithm is to be found</param>
+             <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Log(System.Matlab.Complex,System.Double)">
+             <summary>
+            Returns the logarithm of specified complex number in a specified base
+             </summary>
+             <param name="z">A complex  number  whose logarithm is to be found</param>
+             <param name="n">A real nubmer specifies the logarithm base </param>
+             <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Log(System.Matlab.Complex,System.Matlab.Complex)">
+            <summary>
+            Returns the logrithm of specified complex number in specified base
+            </summary>
+            <param name="z">A complex number whose logarithm is to be found</param>
+            <param name="n">A complex number specifies the logarithm base</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Log10(System.Matlab.Complex)">
+            <summary>
+            Returns base 10 logarithm of specified complex number
+            </summary>
+            <param name="z">A complex number whose logarithm is to be found</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Cos(System.Matlab.Complex)">
+            <summary>
+            Returns the cosine of specified complex number
+            </summary>
+            <param name="z"></param>
+            <returns>A complex number whose cosine to be found</returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Sin(System.Matlab.Complex)">
+            <summary>
+            Returns the sine of specified complex number
+            </summary>
+            <param name="z">A complex number whose sine to be found</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Tan(System.Matlab.Complex)">
+            <summary>
+            Returns the tangent of specified complex number 
+            </summary>
+            <param name="z">A complex number whose tangent to be found</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Cosh(System.Matlab.Complex)">
+            <summary>
+            Returns the hyperbolic cosine of specfied complex number
+            </summary>
+            <param name="z">A complex number whose hyperbloci cosine of to be found</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Tanh(System.Matlab.Complex)">
+            <summary>
+            Returns the hyperbolic tangent of specfied complex number
+            </summary>
+            <param name="z">A complex number whose hyperbloci tangent of to be found</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Sinh(System.Matlab.Complex)">
+            <summary>
+            Returns the hyperbolic sine of specfied complex number
+            </summary>
+            <param name="z">A complex number whose hyperbloci sine of to be found</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Sqrt(System.Matlab.Complex)">
+            <summary>
+            Returns the square root of specified complex nubmer
+            </summary>
+            <param name="z">A complex number</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Power(System.Matlab.Complex,System.Double)">
+            <summary>
+            Return a specified complex nubmber raised to the specified power
+            </summary>
+            <param name="z">A complex number to raised a power </param>
+            <param name="n">A double -precision floating -point number that specifies a power</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Power(System.Matlab.Complex,System.Matlab.Complex)">
+            <summary>
+            Return a specified complex nubmber raised to the specified power where the power is a complex number
+            </summary>
+            <param name="z">A complex number to raised a power</param>
+            <param name="n">A complex number that  specifies a power</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Floor(System.Matlab.Complex)">
+            <summary>
+            Returns the floor of complex number
+            </summary>
+            <param name="z">A complex number</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.Ceiling(System.Matlab.Complex)">
+            <summary>
+            Returns the ceiling of complex nubmer
+            </summary>
+            <param name="z">A complex number</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Maths.MagicMatrix(System.Int32)">
+            <summary>
+            Return a Magic Matrix in a specified dimensions where it is a square matrix
+            </summary>
+            <param name="k">k is a natural number specified the dimensions where the dimensions of the magic matrix is 2k+1</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Matlab.Complex">
+            <summary>
+            A class representing complex numbers 
+            </summary>
+        </member>
+        <member name="F:System.Matlab.Complex.x">
+            <summary>
+            The real part of the complex number
+            </summary>
+        </member>
+        <member name="F:System.Matlab.Complex.y">
+            <summary>
+            The imaginary part of a complex number
+            </summary>
+        </member>
+        <member name="M:System.Matlab.Complex.#ctor(System.Double,System.Double)">
+            <summary>
+            Specifieds the complex number by two real numbers
+            </summary>
+            <param name="x">The real part of the complex number</param>
+            <param name="y">The imaginary part of a complex number</param>
+        </member>
+        <member name="M:System.Matlab.Complex.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Complex.Equals(System.Matlab.Complex)">
+            <summary>
+            
+            </summary>
+            <param name="z"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Complex.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Complex.ToString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Complex.ToString(System.String,System.IFormatProvider)">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <param name="formatProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Complex.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Complex.Parse(System.String)">
+            <summary>Converts the string representation of a number to its complex-precision complex-point number equivalent.</summary>
+            <returns>A complex-precision complex-point number that is equivalent to the numeric value or symbol specified in <paramref name="str" />.</returns>
+            <param name="str">A string that contains a complex number to convert. </param>
+        </member>
+        <member name="M:System.Matlab.Complex.TryParse(System.String,System.Matlab.Complex@)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Matlab.Complex.System#Matlab#ISteerable#SteerTo(System.Matlab.Complex)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:System.Matlab.Complex.ABS" -->
+        <member name="P:System.Matlab.Complex.ARG">
+            <summary>
+            Aruement of complex number
+            </summary>
+        </member>
+    </members>
+</doc>
