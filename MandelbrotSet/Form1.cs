@@ -89,7 +89,7 @@ namespace MandelbrotSet
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            drowMandelbort(100,2);
+            drowMandelbort(255,2);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -101,8 +101,8 @@ namespace MandelbrotSet
         {
             try
             {
-                Complex c = Complex.Parse(textBox1.Text);
-                drawJuliaSet(100, c);
+                Complex c = Complex.Parse(comboBox1.Text);
+                drawJuliaSet(255, c);
             }
             catch
             { }
@@ -125,6 +125,11 @@ namespace MandelbrotSet
             //    drawJuliaSet(100, c);
             //    angel+=0.02;
             //}
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
