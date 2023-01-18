@@ -19,8 +19,9 @@ namespace MandelbrotSet
         private void Form1_Load(object sender, EventArgs e)
         {
             
+           
         }
-
+        
         private void Form1_Shown(object sender, EventArgs e)
         {
         }
@@ -28,7 +29,7 @@ namespace MandelbrotSet
         {
             return (value - start) * (b - a) / (end - start) + a;
         }
-        private void drowMandelbort(int iter,int n)
+        private void drowMandelbort(int iter,int n,Themes theme)
         {
             double minZome = -2,MaxZome=2;
             int w = pictureBox1.Width;
@@ -49,16 +50,69 @@ namespace MandelbrotSet
                         if (z.ABS > 2) break;
                         k++;
                     } while (k < iter);
-                    Color co1 = Color.Black;
-                    double hu = Math.Sqrt(k * 1.0 / iter);
-                    if (iter != k) co1 = SuperColor.FromAhsl(hu * 100);
+                    Color co1 = Theme(iter, k,theme);
                     bitmap.SetPixel(i, j, co1);
 
                 }
             }
             pictureBox1.Image = bitmap;
         }
-        private void drawJuliaSet(int iter, Complex c)
+        public Color Theme(int iter,int k,Themes themes)
+        {
+            switch (themes)
+            {
+                case Themes.red:
+                    {
+                        Color co1 = Color.Black;
+                        double hu = Math.Sqrt(k * 1.0 / iter);
+                        if (iter != k) co1 = SuperColor.FromAhsl(hu * 100);
+                        return co1;
+                    }
+                case Themes.black:
+                    {
+                        int p=(int)(k*1.0/iter*255);
+                        Color co1 = Color.FromArgb(p,p,p);
+                        return co1;
+                    }
+                case Themes.light:
+                    {
+                        Color co1 = Color.Black;
+                        double hu =Math.Pow(k*1.0/iter,0.5);
+                        double sa = 0.9 + hu / 10;
+                        double li =0.5+Math.Cos(k)/25; 
+                        hu *= 100;
+                        sa*=100;
+                        li*=100;
+                        if (iter != k) co1 = SuperColor.FromAhsl(hu,sa,li);
+                        return co1;
+                    }
+                case Themes.radiant:
+                    {
+                        Color co1 = Color.Black;
+                        double hu = Math.Pow(k * 1.0 / iter,0.25);
+                        double li = Math.Pow(k * 1.0 / iter, 0.5)*100;
+                        hu *= 100;
+                        if (iter != k) co1 = SuperColor.FromAhsl(hu,hu,li);
+                        return co1;
+                    }
+
+                
+                default: throw new Exception();
+            }
+            
+        }
+        public enum Themes : int { red, black, light, radiant};
+        public Themes ToEnum(string str)
+        {
+            switch (str)
+            {
+                case "Black": return Themes.black;
+                case "Light": return Themes.light;
+                case "Radiant": return Themes.radiant;
+                default: return Themes.red;
+            }
+        }
+        private void drawJuliaSet(int iter, Complex c,Themes themes)
         {
             double minZome = -2, MaxZome = 2;
             int w = pictureBox1.Width;
@@ -78,9 +132,7 @@ namespace MandelbrotSet
                         if (z.ABS > MaxZome-minZome) break;
                         k++;
                     } while (k < iter);
-                    Color co1 = Color.Black;
-                    double hu=Math.Sqrt(k*1.0/iter);
-                    if (iter != k) co1 = SuperColor.FromAhsl(hu * 100);
+                    Color co1 = Theme(iter, k, themes);
                     bitmap.SetPixel(i, j, co1);
 
                 }
@@ -89,7 +141,7 @@ namespace MandelbrotSet
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            drowMandelbort(255,2);
+            drowMandelbort(255,2,ToEnum(comboBox2.Text));
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -102,7 +154,7 @@ namespace MandelbrotSet
             try
             {
                 Complex c = Complex.Parse(comboBox1.Text);
-                drawJuliaSet(255, c);
+                drawJuliaSet(255, c,ToEnum(comboBox2.Text));
             }
             catch
             { }
@@ -131,6 +183,11 @@ namespace MandelbrotSet
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
         }
 
       
